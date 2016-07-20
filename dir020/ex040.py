@@ -14,3 +14,7 @@ print state.get_value()
 state.set_value(-1)
 print accumulator(3)
 print state.get_value()
+
+decrementor = function([inc], state, updates=[(state, state-inc)])
+print decrementor(2)
+print state.get_value()
